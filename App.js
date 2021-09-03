@@ -1,6 +1,12 @@
 import React from 'react';
 import { Alert, Dimensions, Image, Pressable, StyleSheet, View } from 'react-native';
 
+import papel from 'src./img/papel.png'
+import pedra from 'src./img/pedra.png'
+import tesoura from 'src./img/tesoura.png'
+
+function {height} = Dimension.get('window')
+
 function App(props) {
   function handleButton(button){
     const jogadas = ['Pedra','Papel','Tesoura']
@@ -30,6 +36,9 @@ const styles = StyleSheet.create({
   },
   panel:{
 
+  }
+  console:{
+    
   }
 })
 export default App()
