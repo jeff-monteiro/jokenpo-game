@@ -1,18 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Alert, Dimensions, Image, Pressable, StyleSheet, View } from 'react-native';
 
-export default function App(props) {
+function App(props) {
   function handleButton(button){
     const jogadas = ['Pedra','Papel','Tesoura']
+    const indice = Math.floor(Math.random() * jogadas.length)
+    const comp = jogadas[indice]
+    let resultado = ''
   }
   
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <View style={styles.panel}>
+      
+      </View>
+      <View style={styles.console}>
+      
+      </View>
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -22,5 +28,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+  panel:{
+
+  }
+})
 export default App()
