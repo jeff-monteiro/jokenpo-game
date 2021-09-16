@@ -41,7 +41,7 @@ function App(props) {
       </View>
     )
   }
-  function MyButton({onPress, source, ... props}) {
+  function MyButton({onPress, source, ... props}) { //Efetuando destructuring
     return(
       <Pressable onPress = {onPress}>
         <Image style = {styles.img} source = {source}/>
