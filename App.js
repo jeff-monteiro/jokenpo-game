@@ -35,8 +35,8 @@ function App(props) {
         </View>
         <View style={styles.console}>
           <MyButton onPress = {handleButton.bind(this,'pedra')} source = {pedra}/>
-          <MyButton onPress = {handleButton.bind(this,'pedra')} source = {papel}/>
-          <MyButton onPress = {handleButton.bind(this,'pedra')} source = {tesoura}/>
+          <MyButton onPress = {handleButton.bind(this,'papel')} source = {papel}/>
+          <MyButton onPress = {handleButton.bind(this,'tesoura')} source = {tesoura}/>
         </View>
       </View>
     )
