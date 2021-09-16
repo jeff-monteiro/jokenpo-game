@@ -34,17 +34,18 @@ function App(props) {
           <Image source={imgHeader} />
         </View>
         <View style={styles.console}>
-          <Pressable onPress={handleButton.bind(this,'pedra')}>
-            <Image style={styles.img} source={pedra} />
-          </Pressable>
-          <Pressable onPress={handleButton.bind(this,'papel')}>
-            <Image style={styles.img} source={papel} />
-          </Pressable>
-          <Pressable onPress={handleButton.bind(this,'tesoura')}>
-            <Image style={styles.img} source={tesoura}/>
-          </Pressable>
+          <MyButton onPress = {handleButton.bind(this,'pedra')} source = {pedra}/>
+          <MyButton onPress = {handleButton.bind(this,'pedra')} source = {papel}/>
+          <MyButton onPress = {handleButton.bind(this,'pedra')} source = {tesoura}/>
         </View>
       </View>
+    )
+  }
+  function MyButton({onPress, source, ... props}) {
+    return(
+      <Pressable onPress = {onPress}>
+        <Image style = {styles.img} source = {source}/>
+      </Pressable>
     )
   }
 
